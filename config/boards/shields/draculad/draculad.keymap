@@ -15,15 +15,16 @@
 
         default {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//  Q    |  W  |  E  |  R  |  T  |           |  Y  |  U  |  I  |    O    |  P   |
-//  A    |  S  |  D  |  F  |  G  |           |  H  |  J  |  K  |    L    |  ;   |
-// Lsft/Z|  X  |  C  |  V  |  B  |           |  N  |  M  |  ,  |    .    |Rsft//|
-//      | LCTL | Bspc/LALT | SPC | CAPS| MUTE| Del/Num | Ent | Sym |
+//  J  |  C  |  Y  |  F  |  P  |           |  X  |  W  |  U  | RPT |  .  |
+//  R  |  S  |  T  |  H  |  K  |           |  M  |  N  |  I  |  A  |  O  |
+//  ,  |  V  |  G  |  D  |  B  |           |  /  |  L  |  (  |  )  |  _  |
+//                             |CAPS | MUTE|
+//     |     | LMOD| SPC |                 |  E  | RMOD|    |
            bindings = <
-            &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
-            &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI
-            &mt LSHFT Z &kp X &kp C &kp V &kp B &kp C_MUTE &kp CAPS &kp N &kp M &kp COMMA &kp DOT &mt RSHFT FSLH
-            &kp LCTRL &mt LALT BSPC &kp SPACE &lt 1 DEL &kp RET &mo 2
+            &mt LS(J) J &mt LS(C) C &mt LS(Y) Y &mt LS(F) F &mt LS(P) P                         &mt LS(X) X &mt LS(W) W &mt LS(U) U &kp Q       &kp PERIOD
+            &mt LS(R) R &mt LS(S) S &mt LS(T) T &mt LS(H) H &mt LS(K) K                         &mt LS(M) M &mt LS(N) N &mt LS(I) I &mt LS(A) A &mt LS(O) O
+            &kp COMMA   &mt LS(V) V &mt LS(G) G &mt LS(D) D &mt LS(B) B   &kp C_MUTE  &kp CAPS  &kp SLASH   &mt LS(L) L &kp LPAR    &kp RPAR    &kp UNDER
+                                                &kp LCTRL   &mt LALT BSPC &kp SPACE   &lt 1 DEL &kp RET     &mo 2
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
