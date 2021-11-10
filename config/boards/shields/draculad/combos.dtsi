@@ -18,10 +18,4 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
-/* Brackets */
-// COMBO(escape, &kp ESCAPE, 12 13, BASE)
-
-combo_escape {
-  bindings = <&kp ESCAPE>;
-  key-positions = <12 13>;
-};
+COMBO(escape, &kp ESCAPE, 12 13, BASE)
