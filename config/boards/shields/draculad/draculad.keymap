@@ -22,6 +22,7 @@
 
 &mt {
     flavor = "tap-preferred";
+    tapping-term-ms = <400>;
 };
 
 / {
@@ -39,10 +40,10 @@
 //                                  | CAPS | MUTE |                                  |
 //             |      | LMOD | SPC  |             |  E   | RMOD |      |             |
            bindings = <
-            &mt LS(J) J &mt LS(C) C &mt LS(Y) Y &mt LS(F) F &mt LS(P) P                           &mt LS(X) X &mt LS(W) W &mt LS(U) U &kp Q       &kp PERIOD
-            &mt LS(R) R &mt LS(S) S &mt LS(T) T &mt LS(H) H &mt LS(K) K                           &mt LS(M) M &mt LS(N) N &mt LS(I) I &mt LS(A) A &mt LS(O) O
-            &kp COMMA   &mt LS(V) V &mt LS(G) G &mt LS(D) D &mt LS(B) B  &kp C_MUTE     &kp CAPS  &kp SLASH   &mt LS(L) L &kp LPAR    &kp RPAR    &kp UNDER
-                                                &none       &sl LMOD     &lt NAV SPACE  &kp E     &sl RMOD    &none
+            &mt LS(J) J &mt LS(C) C &mt LS(Y) Y &mt LS(F) F &mt LS(P) P                        &mt LS(X) X &mt LS(W) W &mt LS(U) U &kp Q       &kp PERIOD
+            &mt LS(R) R &mt LS(S) S &mt LS(T) T &mt LS(H) H &mt LS(K) K                        &mt LS(M) M &mt LS(N) N &mt LS(I) I &mt LS(A) A &mt LS(O) O
+            &kp COMMA   &mt LS(V) V &mt LS(G) G &mt LS(D) D &mt LS(B) B   &kp C_MUTE  &kp CAPS &kp SLASH   &mt LS(L) L &kp LPAR    &kp RPAR    &kp UNDER
+                                                &none       &lt NAV SPACE &sl LMOD    &sl RMOD &kp E       &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
@@ -54,10 +55,10 @@
 //                                  | CAPS | MUTE |                                  |
 //             |      |      |      |             | DEF  | FUN  |      |             |
            bindings = <
-            &none       &none        &none      &none        &none                                &none      &kp HASH     &kp AT      &trans      &trans
-            &kp LCTRL   &kp LALT     &kp LSHFT  &kp LGUI     &none                                &kp GRAVE  &kp QMARK    &kp LBKT    &kp RBKT    &none
-            &none       &none        &none      &none        &none       &trans         &trans    &trans     &kp AMPS     &trans      &trans      &trans
-                                                &none        &none       &none          &to 0     &sl FUN    &none
+            &none       &none        &none      &none        &none                              &none      &kp HASH     &kp AT      &trans      &trans
+            &kp LCTRL   &kp LALT     &kp LSHFT  &kp LGUI     &none                              &kp GRAVE  &kp QMARK    &kp LBKT    &kp RBKT    &none
+            &none       &none        &none      &none        &none       &trans       &trans    &trans     &kp AMPS     &trans      &trans      &trans
+                                                &none        &none       &none        &to 0     &sl FUN    &none
            >;
         };
         RMOD {
@@ -68,10 +69,10 @@
 //                                  | CAPS | MUTE |                                  |
 //             |      | FUN  | DEF  |             |      |      |      |             |
            bindings = <
-            &kp TILDE   &kp PLUS     &kp STAR   &kp PRCNT    &none                                &none      &none        &none       &none       &none
-            &kp PIPE    &kp LBRC     &kp LBRC   &kp MINUS    &kp BSLH                             &none      &kp LGUI     &kp LSHFT   &kp LALT    &kp LCTRL
-            &trans      &kp LT       &kp GT     &kp EXCL     &none       &trans         &trans    &none      &none        &none       &none       &none
-                                                &none        &sl FUN     &to 0          &none     &none      &none
+            &kp TILDE   &kp PLUS     &kp STAR   &kp PRCNT    &none                              &none      &none        &none       &none       &none
+            &kp PIPE    &kp LBRC     &kp LBRC   &kp MINUS    &kp BSLH                           &none      &kp LGUI     &kp LSHFT   &kp LALT    &kp LCTRL
+            &trans      &kp LT       &kp GT     &kp EXCL     &none       &trans       &trans    &none      &none        &none       &none       &none
+                                                &none        &sl FUN     &to 0        &none     &none      &none
            >;
 
         };
@@ -83,10 +84,10 @@
 //                                  |      |      |                                  |
 //             |      |      |      |             |      |      |      |             |
            bindings = <
-            &none   &kp LC(LG(LEFT)) &kp UP          &kp LC(LG(RIGHT)) &none                      &kp LG(Z)  &kp LG(V)    &kp LG(C)   &kp LG(X) &kp LS(LG(Z))
-            &none   &kp LEFT         &kp DOWN        &kp RIGHT         &none                      &kp CAPS   &kp LEFT     &kp DOWN    &kp UP      &kp RIGHT
-            &none   &none            &kp LA(LS(TAB)) &kp LA(TAB)       &none    &trans  &trans    &kp INS    &kp HOME     &kp PG_DN   &kp PG_UP   &kp END
-                                                     &none             &none    &none   &none     &none      &none
+            &none   &kp LC(LG(LEFT)) &kp UP          &kp LC(LG(RIGHT)) &none                    &kp LG(Z)  &kp LG(V)    &kp LG(C)   &kp LG(X) &kp LS(LG(Z))
+            &none   &kp LEFT         &kp DOWN        &kp RIGHT         &none                    &kp CAPS   &kp LEFT     &kp DOWN    &kp UP      &kp RIGHT
+            &none   &none            &kp LA(LS(TAB)) &kp LA(TAB)       &none  &trans  &trans    &kp INS    &kp HOME     &kp PG_DN   &kp PG_UP   &kp END
+                                                     &none             &none  &none   &none     &none      &none
            >;
         };
         NUM {
@@ -97,9 +98,9 @@
 //                                  |      |      |                                  |
 //             |      |      | DEF  |             | DEF  |      |      |             |
            bindings = <
-            &kp J       &kp PLUS     &kp STAR   &kp PRCNT    &none                                &trans     &kp MINUS    &none       &none       &trans
-            &kp 6       &kp 4        &kp 0      &kp 2        &trans                               &none      &kp 3        &kp 1       &kp 5       &kp 7
-            &trans      &none        &kp LS(G)  &kp 8        &none       &trans         &trans    &trans     &kp 9        &trans      &trans      &trans                                                &none        &none       &to 0          &to 0     &none      &none
+            &kp J       &kp PLUS     &kp STAR   &kp PRCNT    &none                              &trans     &kp MINUS    &none       &none       &trans
+            &kp 6       &kp 4        &kp 0      &kp 2        &trans                             &none      &kp 3        &kp 1       &kp 5       &kp 7
+            &trans      &none        &kp LS(G)  &kp 8        &none       &trans       &trans    &trans     &kp 9        &trans      &trans      &trans                                                &none        &none       &to 0          &to 0     &none      &none
             >;
         };
         FUN {
@@ -110,10 +111,10 @@
 //                                  |      |      |                                  |
 //             |      |      |      |             |      |      |      |             |
            bindings = <
-            &none       &none        &none      &none        &none                                BOOT      &none        &none       &none       &none
-            &kp F6      &kp F4       &kp F10    &kp F2       &kp F12                              &kp F11    &kp F3       &kp F1      &kp F5     &kp F7
-            &none       &none        &none      &kp F8       &none       &trans         &trans    &none      &kp F9       &none       &none       &none
-                                                &none        &none       &none          &none     &none      &none
+            &none       &none        &none      &none        &none                              BOOT      &none        &none       &none       &none
+            &kp F6      &kp F4       &kp F10    &kp F2       &kp F12                            &kp F11    &kp F3       &kp F1      &kp F5     &kp F7
+            &none       &none        &none      &kp F8       &none       &trans       &trans    &none      &kp F9       &none       &none       &none
+                                                &none        &none       &none        &none     &none      &none
             >;
         };
     };

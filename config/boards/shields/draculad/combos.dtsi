@@ -18,4 +18,6 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
+COMBO(q, &kp Q, 0 1, DEFAULT)
+COMBO(qu, &kp Q &kp U, 1 2, DEFAULT)
 COMBO(esc, &kp ESCAPE, 12 13, DEFAULT)
