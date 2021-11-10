@@ -11,11 +11,10 @@
 
 compatible = "zmk,combos";
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+#define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <LAYERS>; \
   };
 
-COMBO(esc, &kp ESCAPE, 12 13, default)
+COMBO(esc, &kp ESC, 12 13)
