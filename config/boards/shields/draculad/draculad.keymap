@@ -54,5 +54,19 @@
                                                 &none        &none       &none          &to 0     &sl FUN    &none
             >;
         };
+        RMOD {
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  ~   |  +   |  *   |  %   |      |             |      |      |      |      |      |
+//  |   |  {   |  }   |  -   |  \   |             |      | GUI  | SHFT | ALT  | CTRL |
+//  ,   |  <   |  >   |  !   |      |             |      |      |      |      |      |
+//                                  | CAPS | MUTE |                                  |
+//             |      | FUN  | DEF  |             |      |      |      |             |
+           bindings = <
+            &kp TILDE   &kp PLUS     &kp STAR   &kp PRCNT    &none                                &none      &none        &none       &none       &none
+            &kp PIPE    &kp LBRC     &kp LBRC   &kp MINUS    &kp BLSH                             &none      &kp LGUI     &kp LSHFT   &kp LALT    &kp LCTRL
+            &trans      &kp LT       &kp GT     &kp EXCL     &none       &trans         &trans    &none      &none        &none       &none       &none
+                                                &none        &sl FUN     &to 0          &none     &none      &none
+           >;
+        };
     };
 };
