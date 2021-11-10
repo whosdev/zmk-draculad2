@@ -19,4 +19,9 @@ compatible = "zmk,combos";
   };
 
 /* Brackets */
-COMBO(escape, &kp ESCAPE, 12 13, BASE)
+// COMBO(escape, &kp ESCAPE, 12 13, BASE)
+
+combo_escape {
+  bindings = <&kp ESCAPE>;
+  key-positions = <12 13>;
+};
