@@ -52,7 +52,7 @@
             &kp LCTRL   &kp LALT     &kp LSHFT  &kp LGUI     &none                                &kp GRAVE  &kp QMARK    &kp LBKT    &kp RBKT    &none
             &none       &none        &none      &none        &none       &trans         &trans    &trans     &kp AMPS     &trans      &trans      &trans
                                                 &none        &none       &none          &to 0     &sl FUN    &none
-            >;
+           >;
         };
         RMOD {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -77,39 +77,11 @@
 //                                  |      |      |                                  |
 //             |      |      |      |             |      |      |      |             |
            bindings = <
-            &none   &kp LC(LG(LEFT)) &kp UP          &kp LC(LG(RIGHT)) &none                      &kp LG(Z)  &kp LG(V)    &kp LG(C)   &kp LGUI(X) &kp LS(LG(Z))
+            &none   &kp LC(LG(LEFT)) &kp UP          &kp LC(LG(RIGHT)) &none                      &kp LG(Z)  &kp LG(V)    &kp LG(C)   &kp LG(X) &kp LS(LG(Z))
             &none   &kp LEFT         &kp DOWN        &kp RIGHT         &none                      &kp CAPS   &kp LEFT     &kp DOWN    &kp UP      &kp RIGHT
             &none   &none            &kp LA(LS(TAB)) &kp LA(TAB)       &none    &trans  &trans    &kp INS    &kp HOME     &kp PG_DN   &kp PG_UP   &kp END
                                                      &none             &none    &none   &none     &none      &none
-            >;
+           >;
         };
-        NUM {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//  J   |  +   |  *   |  %   |      |             |  X   |  -   |      |      |  .   |
-//  6   |  4   |  0   |  2   |  K   |             |      |  3   |  1   |  5   |  7   |
-//  ,   |      |  G   |  8   |      |             |  /   |  9   |  (   |  )   |  _   |
-//                                  |      |      |                                  |
-//             |      |      | DEF  |             | DEF  |      |      |             |
-           bindings = <
-            &kp J       &kp PLUS     &kp STAR   &kp PRCNT    &none                                &trans     &kp MINUS    &none       &none       &trans
-            &kp 6       &kp 4        &kp 0      &kp 2        &trans                               &none      &kp 3        &kp 1       &kp 5       &kp 7
-            &trans      &none        &kp LS(G)  &kp 8        &none       &trans         &trans    &trans     &kp 9        &trans      &trans      &trans                                                &none        &none       &to 0          &to 0     &none      &none
-            >;
-        };
-        FUN {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//      |      |      |      |      |             |      |      |      |      |      |
-//  F6  |  F4  | F10  |  F2  | F12  |             | F11  |  F3  |  F1  |  F5  |  F7  |
-//      |      |      |  F8  |      |             |      |  F9  |      |      |      |
-//                                  |      |      |                                  |
-//             |      |      |      |             |      |      |      |             |
-           bindings = <
-            &none       &none        &none      &none        &none                                &none      &none        &none       &none       &none
-            &kp F6      &kp F4       &kp F10    &kp F2       &kp F12                              &kp F11    &kp F3       &kp F1      &kp F55     &kp F7
-            &none       &none        &none      &F8          &none       &trans         &trans    &none      &kp F9       &none       &none       &none
-                                                &none        &none       &none          &none     &none      &none
-            >;
-        };
-
     };
 };
