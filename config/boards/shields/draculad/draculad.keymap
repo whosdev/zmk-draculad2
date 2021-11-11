@@ -16,6 +16,7 @@
 #define NAV     3
 #define NUM     4
 #define FUN     5
+#define OPT     6
 
 // alias
 #define BOOT &bootloader
@@ -50,7 +51,7 @@
         };
         LMOD {
 // ------------------------------------------------------------------------.o.o--------------------------------------------------------------------------------------------
-//      |      |      |      |      |             |      |  #   |  @   |      |  .   |
+// OPT  |      |      |      |      |             |      |  #   |  @   |      |  .   |
 // CTRL | ALT  | SHFT | GUI  |      |             |  `   |  ?   |  [   |  ]   |      |
 //      |      |      |      |      |             |  /   |  &   |  (   |  )   |  _   |
 //                                  | CAPS | MUTE |                                  |
@@ -64,7 +65,7 @@
         };
         RMOD {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//  ~   |  +   |  *   |  %   |      |             |      |      |      |      |      |
+//  ~   |  +   |  *   |  %   |      |             |      |      |      |      | OPT  |
 //  |   |  {   |  }   |  -   |  \   |             |      | GUI  | SHFT | ALT  | CTRL |
 //  ,   |  <   |  >   |  !   |      |             |      |      |      |      |      |
 //                                  | CAPS | MUTE |                                  |
@@ -113,9 +114,24 @@
 //                                  |      |      |                                  |
 //             |      |      |      |             |      |      |      |             |
            bindings = <
-            &none       &none        &none      &none        BOOT                               BOOT       &none        &none       &none       &none
+            &none       &none        &none      &none        &none                              &none      &none        &none       &none       &none
             &kp F6      &kp F4       &kp F10    &kp F2       &kp F12                            &kp F11    &kp F3       &kp F1      &kp F5      &kp F7
             &none       &none        &none      &kp F8       &none       &trans       &trans    &none      &kp F9       &none       &none       &none
+                                                &none        &none       &to 0        &to 0     &none      &none
+            >;
+        };
+        OPT {
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//BT_CLR|      |      |BT_NXT|      |             |      |      |      |      |      |
+// BT_0 | BT_1 | BT_2 | BT_3 | BT_4 |             |      |      |      |      |      |
+//      |      |      |BT_PRV|      |             |      |      |      |      |      |
+//                                  |      |      |                                  |
+//             |      |      |      |             |      |      |      |             |
+// RGB backlighting on right when it ever exists
+           bindings = <
+            &bt BT_CLR  &none        &none      &bt BT_NXT   BOOT                               BOOT       &none        &none       &none       &none
+            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                    &none      &none        &none       &none       &none
+            &none       &none        &none      &bt BT_PRV   &none       &trans       &trans    &none      &none        &none       &none       &none
                                                 &none        &none       &to 0        &to 0     &none      &none
             >;
         };
