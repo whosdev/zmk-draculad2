@@ -19,5 +19,5 @@ compatible = "zmk,combos";
   };
 
 COMBO(q, &kp Q, 0 1, DEFAULT)
-COMBO(qu, &kp Q &kp U, 1 2, DEFAULT)
+COMBO(qu, &macro_qu, 1 2, DEFAULT)
 COMBO(esc, &kp ESCAPE, 12 13, DEFAULT)

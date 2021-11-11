@@ -29,6 +29,11 @@
     combos {
       #include "combos.dtsi"
     };
+
+    behaviors {
+      #include "macros.dtsi"
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
