@@ -13,8 +13,8 @@
 #define DEFAULT 0
 #define LMOD    1
 #define RMOD    2
-#define NUM     3
-#define NAV     4
+#define NAV     3
+#define NUM     4
 #define FUN     5
 
 // alias
@@ -88,7 +88,7 @@
             &none   &kp LC(LG(LEFT)) &kp UP          &kp LC(LG(RIGHT)) &none                    &kp LG(Z)  &kp LG(V)    &kp LG(C)   &kp LG(X) &kp LS(LG(Z))
             &none   &kp LEFT         &kp DOWN        &kp RIGHT         &none                    &kp CAPS   &kp LEFT     &kp DOWN    &kp UP      &kp RIGHT
             &none   &none            &kp LA(LS(TAB)) &kp LA(TAB)       &none  &trans  &trans    &kp INS    &kp HOME     &kp PG_DN   &kp PG_UP   &kp END
-                                                     &none             &none  &none   &none     &none      &none
+                                                     &none             &none  &to 0   &to 0     &none      &none
            >;
         };
         NUM {
