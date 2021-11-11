@@ -100,8 +100,8 @@
 //             |      |      | DEF  |             | DEF  |      |      |             |
            bindings = <
             &kp J       &kp PLUS     &kp STAR   &kp PRCNT    &none                              &trans     &kp MINUS    &none       &none       &trans
-            &kp 6       &kp 4        &kp 0      &kp 2        &trans                             &none      &kp 3        &kp 1       &kp 5       &kp 7
-            &trans      &none        &kp LS(G)  &kp 8        &none       &trans       &trans    &trans     &kp 9        &trans      &trans      &trans                                                &none        &none       &to 0          &to 0     &none      &none
+            &kp N6      &kp N4       &kp N0     &kp N2       &trans                             &none      &kp N3       &kp N1      &kp N5      &kp N7
+            &trans      &none        &kp LS(G)  &kp N8       &none       &trans       &trans    &trans     &kp N9       &trans      &trans      &trans                                                &none        &none       &to 0          &to 0     &none      &none
                                                 &none        &none       &to 0        &to 0     &none      &none
             >;
         };
