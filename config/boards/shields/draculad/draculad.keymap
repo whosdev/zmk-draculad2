@@ -22,7 +22,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <400>;
+    tapping-term-ms = <250>;
 };
 
 / {
@@ -107,14 +107,14 @@
         };
         FUN {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//      |      |      |      |      |             | BOOT |      |      |      |      |
+//      |      |      |      | BOOT |             | BOOT |      |      |      |      |
 //  F6  |  F4  | F10  |  F2  | F12  |             | F11  |  F3  |  F1  |  F5  |  F7  |
 //      |      |      |  F8  |      |             |      |  F9  |      |      |      |
 //                                  |      |      |                                  |
 //             |      |      |      |             |      |      |      |             |
            bindings = <
-            &none       &none        &none      &none        &none                              BOOT      &none        &none       &none       &none
-            &kp F6      &kp F4       &kp F10    &kp F2       &kp F12                            &kp F11    &kp F3       &kp F1      &kp F5     &kp F7
+            &none       &none        &none      &none        BOOT                               BOOT       &none        &none       &none       &none
+            &kp F6      &kp F4       &kp F10    &kp F2       &kp F12                            &kp F11    &kp F3       &kp F1      &kp F5      &kp F7
             &none       &none        &none      &kp F8       &none       &trans       &trans    &none      &kp F9       &none       &none       &none
                                                 &none        &none       &to 0        &to 0     &none      &none
             >;
