@@ -57,7 +57,7 @@
 //             |      |      |      |             | DEF  | FUN  |      |             |
            bindings = <
             &none       &none        &none      &none        &none                              &none      &kp HASH     &kp AT      &trans      &trans
-            &kp LCTRL   &kp LALT     &kp LSHFT  &kp LGUI     &none                              &kp GRAVE  &kp QMARK    &kp LBKT    &kp RBKT    &none
+            &sk LCTRL   &sk LALT     &sk LSHFT  &sk LGUI     &none                              &kp GRAVE  &kp QMARK    &kp LBKT    &kp RBKT    &none
             &none       &none        &none      &none        &none       &trans       &trans    &trans     &kp AMPS     &trans      &trans      &trans
                                                 &none        &none       &none        &sl FUN   &to 0      &none
            >;
@@ -71,7 +71,7 @@
 //             |      | FUN  | DEF  |             |      |      |      |             |
            bindings = <
             &kp TILDE   &kp PLUS     &kp STAR   &kp PRCNT    &none                              &none      &none        &none       &none       &none
-            &kp PIPE    &kp LBRC     &kp RBRC   &kp MINUS    &kp BSLH                           &none      &kp LGUI     &kp LSHFT   &kp LALT    &kp LCTRL
+            &kp PIPE    &kp LBRC     &kp RBRC   &kp MINUS    &kp BSLH                           &none      &sk LGUI     &sk LSHFT   &sk LALT    &sk LCTRL
             &trans      &kp LT       &kp GT     &kp EXCL     &none       &trans       &trans    &none      &none        &none       &none       &none
                                                 &none        &to 0       &sl FUN      &none     &none      &none
            >;
