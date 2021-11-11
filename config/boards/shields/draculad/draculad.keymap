@@ -49,7 +49,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
         LMOD {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------.o.o--------------------------------------------------------------------------------------------
 //      |      |      |      |      |             |      |  #   |  @   |      |  .   |
 // CTRL | ALT  | SHFT | GUI  |      |             |  `   |  ?   |  [   |  ]   |      |
 //      |      |      |      |      |             |  /   |  &   |  (   |  )   |  _   |
@@ -59,7 +59,7 @@
             &none       &none        &none      &none        &none                              &none      &kp HASH     &kp AT      &trans      &trans
             &kp LCTRL   &kp LALT     &kp LSHFT  &kp LGUI     &none                              &kp GRAVE  &kp QMARK    &kp LBKT    &kp RBKT    &none
             &none       &none        &none      &none        &none       &trans       &trans    &trans     &kp AMPS     &trans      &trans      &trans
-                                                &none        &none       &none        &to 0     &sl FUN    &none
+                                                &none        &none       &none        &sl FUN   &to 0      &none
            >;
         };
         RMOD {
@@ -71,9 +71,9 @@
 //             |      | FUN  | DEF  |             |      |      |      |             |
            bindings = <
             &kp TILDE   &kp PLUS     &kp STAR   &kp PRCNT    &none                              &none      &none        &none       &none       &none
-            &kp PIPE    &kp LBRC     &kp LBRC   &kp MINUS    &kp BSLH                           &none      &kp LGUI     &kp LSHFT   &kp LALT    &kp LCTRL
+            &kp PIPE    &kp LBRC     &kp RBRC   &kp MINUS    &kp BSLH                           &none      &kp LGUI     &kp LSHFT   &kp LALT    &kp LCTRL
             &trans      &kp LT       &kp GT     &kp EXCL     &none       &trans       &trans    &none      &none        &none       &none       &none
-                                                &none        &sl FUN     &to 0        &none     &none      &none
+                                                &none        &to 0       &sl FUN      &none     &none      &none
            >;
 
         };
@@ -87,7 +87,7 @@
            bindings = <
             &none   &kp LC(LG(LEFT)) &kp UP          &kp LC(LG(RIGHT)) &none                    &kp LG(Z)  &kp LG(V)    &kp LG(C)   &kp LG(X) &kp LS(LG(Z))
             &none   &kp LEFT         &kp DOWN        &kp RIGHT         &none                    &kp CAPS   &kp LEFT     &kp DOWN    &kp UP      &kp RIGHT
-            &none   &none            &kp LA(LS(TAB)) &kp LA(TAB)       &none  &trans  &trans    &kp INS    &kp HOME     &kp PG_DN   &kp PG_UP   &kp END
+            &none   &none            &kp LG(LS(TAB)) &kp LG(TAB)       &none  &trans  &trans    &kp INS    &kp HOME     &kp PG_DN   &kp PG_UP   &kp END
                                                      &none             &none  &to 0   &to 0     &none      &none
            >;
         };
