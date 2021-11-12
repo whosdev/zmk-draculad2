@@ -1,5 +1,6 @@
 macro_qu: macro_qu {
   compatible = "zmk,behavior-macro";
   label = "qu";
-  bindings = <&kp q &kp u>;
+  #binding-cells = <0>;
+  bindings = <&kp q>, <&kp u>;
 };
