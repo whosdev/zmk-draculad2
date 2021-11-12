@@ -6,4 +6,10 @@
     bindings = <BINDINGS>; \
   };
 
-MACRO(qu, &kp q &kp u)
+// MACRO(qu, &kp q &kp u)
+
+macro_qu: macro_qu {
+  compatible = "zmk,behavior-macro";
+  label = qu;
+  bindings = <&kp q &kp u>;
+};
