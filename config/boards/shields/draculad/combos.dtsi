@@ -19,7 +19,7 @@ compatible = "zmk,combos";
   };
 
 COMBO(q, &kp Q, 0 1, DEFAULT)
-COMBO(qu, &macro_qu, 1 2, DEFAULT)
+COMBO(qu, macro_qu, 1 2, DEFAULT)
 COMBO(z, &kp Z, 2 3, DEFAULT)
 COMBO(backspace, &kp BACKSPACE, 11 12 13, DEFAULT)
 COMBO(tab, &kp TAB, 11 12, DEFAULT)
