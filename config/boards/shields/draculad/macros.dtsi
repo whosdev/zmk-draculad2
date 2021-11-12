@@ -6,5 +6,4 @@
     bindings = <BINDINGS>; \
   };
 
-// Then select the desired app:
 MACRO(qu, &kp q &kp u)
