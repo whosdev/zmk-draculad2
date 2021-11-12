@@ -1,6 +1,22 @@
-macro_qu: macro_qu {
-  compatible = "zmk,behavior-macro";
-  label = "qu";
-  #binding-cells = <0>;
-  bindings = <&kp Q>, <&kp U>;
+// Macro macro:
+// #define MACRO(NAME, BINDINGS) \
+//   macro_##NAME: macro_##NAME { \
+//     compatible = "zmk,behavior-macro"; \
+//     label = str(NAME); \
+//     bindings = <BINDINGS>; \
+//   };
+//
+// MACRO(qu, &kp q &kp u)
+//
+// macro_q: macro_q { \
+//   compatible = "zmk,behavior-macro"; \
+//   label = str(NAME); \
+//   bindings = <BINDINGS>; \
+// };
+
+macro_1: macro_1 {
+    compatible = "zmk,behavior-macro";
+    label = "MACRO_1";
+    #binding-cells = <0>;
+    bindings = <&kp A>, <&kp B>;
 };

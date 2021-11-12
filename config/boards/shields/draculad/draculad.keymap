@@ -32,12 +32,7 @@
     };
 
     behaviors {
-        macro_1: macro_1 {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_1";
-            #binding-cells = <0>;
-            bindings = <&kp A>, <&kp B>;
-        };
+      #include "macros.dtsi"
     };
 
     keymap {
