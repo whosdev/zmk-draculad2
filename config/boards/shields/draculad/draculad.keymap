@@ -32,7 +32,12 @@
     };
 
     behaviors {
-      #include "macros.dtsi"
+        macro_1: macro_1 {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_1";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp B>;
+        };
     };
 
     keymap {
@@ -46,7 +51,7 @@
 //                                  | CAPS | MUTE |                                  |
 //             |      | LMOD | SPC  |             |  E   | RMOD |      |             |
            bindings = <
-            &mt LS(J) J &mt LS(C) C &mt LS(Y) Y &mt LS(F) F &mt LS(P) P                        &mt LS(X) X &mt LS(W) W &mt LS(U) U &kp Q       &kp PERIOD
+            &macro_1 &mt LS(C) C &mt LS(Y) Y &mt LS(F) F &mt LS(P) P                        &mt LS(X) X &mt LS(W) W &mt LS(U) U &kp Q       &kp PERIOD
             &mt LS(R) R &mt LS(S) S &mt LS(T) T &mt LS(H) H &mt LS(K) K                        &mt LS(M) M &mt LS(N) N &mt LS(I) I &mt LS(A) A &mt LS(O) O
             &kp COMMA   &mt LS(V) V &mt LS(G) G &mt LS(D) D &mt LS(B) B   &kp C_MUTE  &kp CAPS &kp SLASH   &mt LS(L) L &kp LPAR    &kp RPAR    &kp UNDER
                                                 &none       &lt NAV SPACE &sl LMOD    &sl RMOD &kp E       &none
