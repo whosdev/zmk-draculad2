@@ -1,13 +1,3 @@
-// Macro macro:
-#define MACRO(NAME, BINDINGS) \
-  macro_##NAME: macro_##NAME { \
-    compatible = "zmk,behavior-macro"; \
-    label = str(NAME); \
-    bindings = <BINDINGS>; \
-  };
-
-// MACRO(qu, &kp q &kp u)
-
 macro_qu: macro_qu {
   compatible = "zmk,behavior-macro";
   label = qu;
