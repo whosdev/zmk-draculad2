@@ -76,7 +76,7 @@
 //             |      | FUN  | DEF  |             |      |      |      |             |
            bindings = <
             &kp TILDE   &kp PLUS     &kp STAR   &kp PRCNT    &none                              &none      &none        &none       &none       &sl OPT
-            &mt MACRO_PIPE PIPE    &kp LBRC     &kp RBRC   &kp MINUS    &kp BSLH                           &none      &sk LGUI     &sk LSHFT   &sk LALT    &sk LCTRL
+            &macro_pipe &kp LBRC     &kp RBRC   &kp MINUS    &kp BSLH                           &none      &sk LGUI     &sk LSHFT   &sk LALT    &sk LCTRL
             &trans      &kp LT       &kp GT     &kp EXCL     &none       &trans       &trans    &none      &none        &none       &none       &none
                                                 &none        &to 0       &sl FUN      &none     &none      &none
            >;
