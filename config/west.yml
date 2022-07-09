@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      remote: macros
-      revision: rebased-macros
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
